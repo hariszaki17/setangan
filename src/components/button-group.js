@@ -1,4 +1,6 @@
-/** @jsx jsx */
+/** @jsxRuntime classic */
+
+// /** @jsx jsx */
 import { jsx, Box, Container, Flex } from 'theme-ui';
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
 

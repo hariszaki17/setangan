@@ -1,4 +1,6 @@
-/** @jsx jsx */
+/** @jsxRuntime classic */
+
+// /** @jsx jsx */
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 

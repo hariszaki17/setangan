@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-/** @jsx jsx */
+/** @jsxRuntime classic */
+
+// /** @jsx jsx */
 import { jsx, Container, Box, Grid, Text, Heading, Button, Image } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import TextFeature from 'components/text-feature';
