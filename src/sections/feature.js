@@ -5,43 +5,43 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Performance from 'assets/feature/performance.svg';
-import Partnership from 'assets/feature/partnership.svg';
-import Subscription from 'assets/feature/subscription.svg';
-import Support from 'assets/feature/support.svg';
+import Cardboard from 'assets/cardboard.jpg';
+import Baggase from 'assets/baggase.jpg';
+import Color from 'assets/color.jpg';
+import QC from 'assets/qc.jpg';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    imgSrc: Cardboard,
+    altText: 'Cardboard Package',
+    title: 'Cardboard Package',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'We Update The Size of Cardboard Layer To Smaller Package Form And Make It Safer For Delivery.',
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    imgSrc: Baggase,
+    altText: 'Baggase Box',
+    title: 'Baggase Box',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      "We'd Belive The Creativity Will Never Harm Anything, Is Specific Our Evironment. Thus, To Align With Our Value We Changed Our Packages To Be More Natural And Environment Friendly.",
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    imgSrc: Color,
+    altText: 'Make Yours More Colorful',
+    title: 'Make Yours More Colorful',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      "With More Colors We Provided You Can Create An Existential Craft. Just Rainbows Your Craft!",
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    imgSrc: QC,
+    altText: 'Quality Check',
+    title: 'Quality Check',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'All Our Products Has Been Passed Quality Check Before Landed Right To You Home. We Calculate More Percise Weight, Ensure No Broken Part, Cross Checking Order, etc.',
   },
 ];
 
@@ -50,8 +50,8 @@ export default function Feature() {
    <section sx={{ variant: "section.feature" }}>
      <Container>
         <SectionHeader
-        slogan="Quality Features"
-        title="Amazing useful features"
+        slogan="Our Latest"
+        title="Newest Product Improvement"
         ></SectionHeader>
 
         <Grid sx={styles.grid}>

@@ -3,27 +3,30 @@
 // /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import BannerImg from 'assets/banner-thumb-new.png';
+import ShapeLeft from 'assets/shp2.svg';
+import ShapeRight from 'assets/shp.svg';
+import Logo from 'components/logo';
+import LogoSetangan from 'assets/LogoSetangan.jpg'
 
 export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
+        <Logo src={LogoSetangan} />
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Product to Explore
+            The #1st Creative Clay Kit
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Check out out website to find great software products and deals!
-            If you need a website or a web application this is the place to go!
+            A kit that contains you all the things you need to make a clay craft from home!
+            Go check our latest!
           </Text>
           <Button variant="primary">Explore</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner"/>
+          <Image src={BannerImg} sx={{ borderRadius:'10px' }} alt="banner"/>
         </Box>
       </Container>
     </section>
@@ -32,14 +35,15 @@ export default function Banner() {
 
 const styles = {
   banner: {
-    pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
+    // pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
+    pt: '100px',
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
     '&::before': {
       position: 'absolute',
       content: '""',
-      bottom: 6,
+      bottom: 0,
       left: 0,
       height: '100%',
       width: '100%',
@@ -47,7 +51,7 @@ const styles = {
       backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
-      backgroundSize: '36%',
+      backgroundSize: '40%',
     },
     '&::after': {
       position: 'absolute',
@@ -60,7 +64,7 @@ const styles = {
       backgroundImage: `url(${ShapeRight})`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
-      backgroundSize: '32%',
+      backgroundSize: '50%',
     },
     container: {
       minHeight: 'inherit',

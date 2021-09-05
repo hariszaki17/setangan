@@ -32,8 +32,8 @@ const styles = {
   img: {
     mx: ['auto', null, 0],
     ml: ['auto', null, '-13px'],
-    mb: -2,
-    width: ['80px', null, null, '90px', null, 'auto'],
+    mb: 4,
+    width: ['50px', null, null, '80px', null],
   },
   wrapper: {
     width: '100%',
@@ -41,13 +41,13 @@ const styles = {
     flexDirection: 'column',
     title: {
       fontSize: 3,
-      color: 'heading_secondary',
+      color: 'primary',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, 3],
     },
     subTitle: {
-      fontSize: 1,
+      fontSize: 3,
       fontWeight: 400,
       lineHeight: '1.9',
     },

@@ -28,11 +28,12 @@ const styles = {
   },
 
   img: {
-    width: ['70px', null, null, '80px', '90px', 'auto'],
+    width: ['100px', null, null, '180px', '200px'],
     height: 'auto',
     flexShrink: 0,
     mr: [2, 3, null, null, 4, 5],
     ml: -2,
+    borderRadius: '50%'
   },
   wrapper: {
     width: '100%',
@@ -41,14 +42,14 @@ const styles = {
     mt: '-5px',
     title: {
       fontSize: [2, 3],
-      color: 'heading_secondary',
+      color: 'primary',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: ['10px', null, '15px'],
     },
 
     subTitle: {
-      fontSize: [1, '15px'],
+      fontSize: [3],
       fontWeight: 400,
       lineHeight: '1.9',
     },

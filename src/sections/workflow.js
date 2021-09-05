@@ -12,27 +12,27 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Prepare The Playground',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      "Set Your Most Comfy And Clean Space To Pour Down Your Idea, Don't Forget To Bring Little Water In Case You Feel Your Clay Too Hard To Shaped.",
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Unbox The Package Gracefully',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      "Don't Be Hurry, The Creativity Comes When You Enjoy Every Moment With Your Arts.",
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Shape It!',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      "By Now You Can Start Crafting After That You Can Dry It Before Sanding Process, Then You Can Coloring And Varnishing To Make More Intriguing. Voila! Your First Clay Craft Has Made.",
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Save It For Later',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      "If There Are Some Remaining Material, Don't Forget Rewrap To Make It Reuseable.",
   },
 ];
 
@@ -41,8 +41,8 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-        slogan="What's The Function"
-        title="Meet the feature of out product"
+        slogan="The Tips"
+        title="How To Play Our Clay"
         isWhite={true}
         />
 

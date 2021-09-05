@@ -8,31 +8,31 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
-import shapePattern from 'assets/shape-pattern1.png';
+import ServiceThumb from 'assets/thumbnail-service.jpg';
+import shapePattern from 'assets/bg-svg.svg';
 
-import Smart from 'assets/services/smart.svg';
-import Secure from 'assets/services/secure.svg';
+import Listen from 'assets/ear.png';
+import Ask from 'assets/test.png';
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  subTitle: 'Our Services',
+  title: "Your Satisfaction is Our Pleasure",
   features: [
     {
       id: 1,
-      imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      imgSrc: Listen,
+      altText: 'We Always Listen',
+      title: 'We Always Listen',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'We View The Feedback as Valuable Things And We Do Love To Be Asked, So Feel Free to Do More.',
     },
     {
       id: 2,
-      imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      imgSrc: Ask,
+      altText: 'We Learn Together',
+      title: 'We Learn Together',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Setangan Try The Best To Constanly Give You Information, Tips and Technics About Clay Craftmentship',
     },
   ],
 };
@@ -47,7 +47,7 @@ export default function ServiceSection() {
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
+          <Image src={ServiceThumb} sx={{ borderRadius: '20px' }} alt="Thumbnail" />
           <Button
           sx={styles.videoBtn}
           onClick={handleClick}
@@ -81,10 +81,11 @@ export default function ServiceSection() {
         </Box>
       </Container>
       <ModalVideo
-        channel="youtube"
+        channel="custom"
+        url='https://res.cloudinary.com/dr4hy9crl/video/upload/v1630857447/232895434_828660151188137_5558040035759870316_n_ne671a.mp4'
         isOpen={videoOpen}
-        videoId="UDIQwGb-4YQ"
-        ratio="16:9"
+        // videoId="UDIQwGb-4YQ"
+        ratio="9:9"
         onClose={() => setVideoOpen(!videoOpen)}
       />
     </section>
@@ -211,14 +212,14 @@ const styles = {
     mt: '-5px',
     title: {
       fontSize: 3,
-      color: 'heading_secondary',
+      color: 'primary',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, 3, 2, 3],
     },
 
     subTitle: {
-      fontSize: [1, null, null, '14px', 1],
+      fontSize: 3,
       fontWeight: 400,
       lineHeight: 1.9,
     },

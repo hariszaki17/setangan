@@ -1,16 +1,19 @@
 export default {
   // example colors with dark mode
   colors: {
-    text: '#343D48', // body color and primary color
+    // text: '#343D48', // body color and primary color
     text_secondary: '#02073E', // secondary body color
     heading: '#0F2137', // primary heading color
     heading_secondary: '#0F2137', // heading color
-    background: '#FFFFFF', // body background color
+    // background: '#FFFFFF', // body background color
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E5ECF4', // border color
     yellow: '#FFA740', // border color
-    primary: '#EA3A60', // primary button and link color
-    secondary: '#2563FF', // secondary color - can be used for hover states
+    text: '#deb498',
+    background: '#efebea',
+    primary: '#ae805d',
+    secondary: '#deb498',
+    third: '#d5b3ac',
     muted: '#E4E4E4', // muted color
     accent: '#609', // a contrast color for emphasizing UI
 
@@ -149,7 +152,7 @@ export default {
       color: 'heading',
     },
     heroPrimary: {
-      color: 'heading',
+      color: 'primary',
       fontSize: [
         '32px',
         '36px',
@@ -170,7 +173,7 @@ export default {
       fontWeight: 'body',
       mb: 5,
       px: [0, null, 5, 6, null, 8, 9],
-      color: 'heading',
+      color: 'secondary',
     },
     title: {
       // extends the text.heading styles

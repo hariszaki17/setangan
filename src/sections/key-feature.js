@@ -5,43 +5,43 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
+import Percent from 'assets/original.png';
+import Easy from 'assets/easy.png';
+import Kit from 'assets/tools.png';
+import PriceTag from 'assets/money.png';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    imgSrc: Percent,
+    altText: '100% Stoneware Clay',
+    title: '100% Stoneware Clay',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Our product made by a pure stoneware clay provides more durable material.',
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    imgSrc: Easy,
+    altText: 'Simple and Easy to Use',
+    title: 'Simple and Easy to Use',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      "Since setangan is a ready to use clay, you won't needed any tools to create your own clay craft.",
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    imgSrc: Kit,
+    altText: 'Complete Clay Kit',
+    title: 'Complete Clay Kit',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Coloring, Varnishing, Sanding and Clay Crafting Can be Done With Only a Package of Setangan.',
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    imgSrc: PriceTag,
+    altText: 'High Quality with Low Spend Money',
+    title: 'High Quality with Low Spend Money',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Setangan Gives You The Best Deal For All in One Clay Kit in The Town.',
   },
 ];
 
@@ -50,8 +50,8 @@ export default function KeyFeature() {
    <section sx={{ variant: 'section.keyFeature' }} id="feature">
      <Container>
        <SectionHeader
-       slogan="What the function"
-       title="Meet the feature of our product"
+       slogan="About"
+       title="Setangan: The Creative Clay Kit"
        />
 
        <Grid sx={styles.grid}>

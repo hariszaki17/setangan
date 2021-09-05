@@ -1,20 +1,20 @@
 /** @jsxRuntime classic */
 
 // /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Button, Text } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
-import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+// import Logo from 'components/logo';
+// import LogoDark from 'assets/logo.svg';
+// import LogoSetangan from 'assets/LogoSetangan-removebg-preview.png'
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
-import { path } from 'prettier';
 
 export default function Header({ className }) {
   return (
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-        <Logo src={LogoDark} />
+          <Text as="h2">setangan.id</Text>
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
             <Link
@@ -33,8 +33,8 @@ export default function Header({ className }) {
         <Button
         className="donate__btn"
         variant="secondary"
-        aria-label="Get Started">
-          Get Started
+        aria-label="Buy Now">
+          Buy Now
         </Button>
         <MobileDrawer></MobileDrawer>
         </Container>
@@ -75,7 +75,7 @@ const styles = {
     '&.sticky': {
       position: 'fixed',
       backgroundColor: 'background',
-      color: '#000000',
+      color: 'primary',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
       py: 3,
       'nev > a': {

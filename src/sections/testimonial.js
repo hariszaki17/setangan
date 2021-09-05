@@ -103,7 +103,7 @@ const carouselParams = {
 
 export default function TestimonialCard() {
   return (
-   <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
+   <section id="testimonial" sx={{ variant: 'section.testimonial', mb: -10 }}>
      <Container css={{ textAlign: 'center' }}>
        <SectionHeader
        slogan="Testimonial"
@@ -144,7 +144,7 @@ const styles = {
     justifyContent: 'flex-end',
     flexDirection: 'column',
     alignItems: 'flex-end',
-    mt: '-30px',
+    mt: '-50px',
     px: '15px',
     '.carousel-container': {
       width: '100%',

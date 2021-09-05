@@ -10,13 +10,14 @@ export default function Logo({ src, ...rest }) {
     path="/"
     sx={{
       variant: "links.logo",
-      display: 'flex',
+      display: 'flex center',
       cursor: 'pointer',
-      mr: 15
+      mr: 15,
+      width: '5%',
     }}
     { ...rest }
     >
-      <Image src={src} alt="nextjs landing page logo"/>
+      <Image src={src} sx={{ borderRadius: '50%' }} alt="nextjs landing page logo"/>
     </Link>
   );
 }
