@@ -8,109 +8,98 @@ import Carousel from 'react-multi-carousel';
 import PriceCard from 'components/price-card';
 import ButtonGroup from 'components/button-group';
 import SectionHeader from 'components/section-header';
-import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
+import Product2 from 'assets/prod2.jpg'
+import Product1 from 'assets/prod1.jpg'
+import Product3 from 'assets/prod3.jpeg'
+import Product4 from 'assets/prod4.jpeg'
 
 const packages = {
   monthly: [
     {
-      id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
-      priceWithUnit: '$0',
+      id: 5,
+      header: 'Suggested',
+      headerIcon: <IoIosCheckmarkCircle />,
+      name: 'Clay Kit',
+      description: 'The All in One Kit',
+      priceWithUnit: 'Rp. 75.000',
+      buttonText: 'Buy Now',
+      src: Product1,
+      href: 'https://shopee.co.id/Homemade-Clay-Kit-FULLSET-100-Stoneware-Clay-i.478147379.8872866921',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: '350gr Watertight stoneware clay',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "2 pcs Joyko painting brush",
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: '6 pot Premium acrilic colour',
           isAvailable: true,
         },
         {
           id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'eCommerce Store ',
+          icon: <IoIosCheckmarkCircle />,
+          text: '1 pcs Soft sponge',
+          isAvailable: true,
+        },
+      ],
+    },
+    {
+      id: 1,
+      name: 'Clay (Only)',
+      href: 'https://shopee.co.id/100-Stoneware-Clay-500gram-(Homemade-Clay-Kit)-i.478147379.8872885525',
+      description: 'A 100% Stoneware Clay',
+      buttonText: 'Buy Now',
+      priceWithUnit: 'Rp 34.000',
+      src: Product2,
+      points: [
+        {
+          id: 1,
+          icon: <IoIosCheckmarkCircle />,
+          text: '500 Gr Of Best Quality Clay',
           isAvailable: true,
         },
       ],
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
-      priceWithUnit: '$15',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 14 Days trail',
+      name: 'Varnish',
+      src: Product3,
+      href: 'https://shopee.co.id/Varnish-by-Setangan.id-i.478147379.9480476624',
+      description: 'A Varnish To Shimmer Your Craft',
+      priceWithUnit: 'Rp 8.000',
+      buttonText: 'Buy Now',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
+          text: 'Small Pot Varnish With Water Mixture',
           isAvailable: true,
         },
       ],
     },
     {
       id: 3,
-      header: 'Suggested',
-      headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
-      priceWithUnit: '$24',
-      buttonText: 'Create account',
-      anotherOption: 'Or Start 14 Days trail',
+      name: 'Paint (Only)',
+      href: 'https://shopee.co.id/(-Additional)-Cat-Only-i.478147379.11236356148',
+      description: 'An Additional Color Tube',
+      priceWithUnit: 'Rp 19.000',
+      buttonText: 'Buy Now',
+      src: Product4,
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
-          isAvailable: true,
-        },
-        {
-          id: 2,
-          icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
-          isAvailable: true,
-        },
-        {
-          id: 3,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
-          isAvailable: true,
-        },
-        {
-          id: 4,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
+          text: 'Small Pot Varnish With Water Mixture',
           isAvailable: true,
         },
       ],
@@ -138,7 +127,7 @@ const responsive = {
 
 export default function Package() {
   const { monthly } = packages;
-  const [state, setState] = useState({
+  const [state] = useState({
     active: 'monthly',
     pricingPlan: monthly
   })
@@ -167,7 +156,7 @@ export default function Package() {
   };
 
   return (
-    <section id="pricing" sx={{ variant: 'section.pricing', mb: -200 }}>
+    <section id="pricing" sx={{ variant: 'section.pricing', mb: -130 }}>
       <Container>
         <SectionHeader
         slogan="Our Products"
@@ -234,7 +223,7 @@ const styles = {
       },
     },
     '.button__group': {
-      display: ['flex', null, null, null, 'none'],
+      display: ['flex', null, null, null],
       mb: [4, null, null, null, 0],
     },
   },

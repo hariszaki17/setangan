@@ -4,9 +4,6 @@
 import { jsx, Container, Flex, Button, Text } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
-// import Logo from 'components/logo';
-// import LogoDark from 'assets/logo.svg';
-// import LogoSetangan from 'assets/LogoSetangan-removebg-preview.png'
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
@@ -30,12 +27,14 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Button
-        className="donate__btn"
-        variant="secondary"
-        aria-label="Buy Now">
-          Buy Now
-        </Button>
+        <a href='https://shopee.co.id/setangan.id?categoryId=100639&itemId=11236356148' target='_blank'>
+          <Button
+          className="donate__btn"
+          variant="secondary"
+          aria-label="Buy Now">
+            Buy Now
+          </Button>
+        </a>
         <MobileDrawer></MobileDrawer>
         </Container>
       </header>

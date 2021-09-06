@@ -13,7 +13,7 @@ const data = {
   description:
     "We Publish Various Post In Regard With Our Newest Product, Tips n Tricks, Special Promos And Many More. So Don't Miss It.",
   btnName: 'Get Started',
-  btnURL: '#',
+  btnURL: 'https://www.instagram.com/setangan.id/',
 };
 
 export default function CoreFeature() {

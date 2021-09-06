@@ -18,7 +18,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
         <Layout>
-          <SEO title="NextJS Landing Page" />
+          <SEO title="The #1st Creative Clay Kit" />
           <Banner />
           <KeyFeature />
           <ServiceSection />
@@ -27,7 +27,7 @@ export default function IndexPage() {
           <WorkFlow />
           <Package />
           {/* <TeamSection /> */}
-          <TestimonialCard />
+          {/* <TestimonialCard /> */}
         </Layout>
     </ThemeProvider>
   );

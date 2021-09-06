@@ -11,10 +11,8 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
-            <Image src={FooterLogo}/>
-          </Link>
-          <Box sx={styles.footer.menus}>
+          {/* <Text as="h2">setangan.id</Text> */}
+          {/* <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (
                 <Link
@@ -25,7 +23,7 @@ export default function Footer() {
                 ></Link>
               ))}
             </nav>
-          </Box>
+          </Box> */}
           <Text sx={styles.footer.copyright}></Text>
           Copyright by setangan.id
         </Box>

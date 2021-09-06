@@ -1,4 +1,4 @@
-import { Box, Card, Text, Heading, Button } from 'theme-ui';
+import { Box, Card, Text, Heading, Button, Image } from 'theme-ui';
 import React from 'react';
 import List from './list';
 
@@ -8,9 +8,11 @@ export default function PriceCard({
     name,
     description,
     priceWithUnit,
-    buttonText = 'Start Free Trial',
+    buttonText = 'Buy Now',
     anotherOption,
     points,
+    src,
+    href
   },
 }) {
   return (
@@ -19,37 +21,41 @@ export default function PriceCard({
     sx={styles.pricingBox}
     >
       {header && <Text sx={styles.header}>{header}</Text>}
-      <Box>
         <Box className="pacakge__header" sx={styles.pricingHeader}>
-          <Heading className="package__name" variant="title">
-            {name}
-          </Heading>
-          <Text as="p">{description}</Text>
+          <Image src={src} sx={{ width: '100%', mb: 6, display: 'flex', alignSelf: 'center', borderRadius: '2%' }}/>
+          <Box>
+            <Heading className="package__name" variant="title">
+              {name}
+            </Heading>
+            <Text as="p">{description}</Text>
+          </Box>
+          <List
+          items={points}
+          childStyle={styles.listItem}
+          ></List>
         </Box>
-        <List
-        items={points}
-        childStyle={styles.listItem}
-        ></List>
-        <Text className="package__price" sx={styles.price}>
-          {priceWithUnit}
-          <span>/Monthly</span>
-        </Text>
-        <Box sx={styles.buttonGroup}>
-          <Button variant="primary" aria-label={buttonText}>
-            {buttonText}
-          </Button>
-          {anotherOption && (
-            <Button
-            variant="textButton"
-            className="free_trial"
-            aria-label={anotherOption}
-            sx={{ color: 'black' }}
-            >
-              {anotherOption}
-            </Button>
-          )}
+        <Box>
+          <Text className="package__price" sx={styles.price}>
+            {priceWithUnit}
+          </Text>
+          <Box sx={styles.buttonGroup}>
+            <a href={href} target="_blank">
+              <Button variant="primary" aria-label={buttonText}>
+                {buttonText}
+              </Button>
+            </a>
+            {anotherOption && (
+              <Button
+              variant="textButton"
+              className="free_trial"
+              aria-label={anotherOption}
+              sx={{ color: 'black' }}
+              >
+                {anotherOption}
+              </Button>
+            )}
+          </Box>
         </Box>
-      </Box>
     </Card>
   );
 }
@@ -59,6 +65,9 @@ const styles = {
     borderRadius: 20,
     position: 'relative',
     transition: 'all 0.3s',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
     p: ['35px 25px', null, null, '40px'],
     width: ['100%', '75%', '100%'],
     mb: '40px',
@@ -100,8 +109,11 @@ const styles = {
     px: '12px',
   },
   pricingHeader: {
+    display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignContent: 'space-between',
+    // alignItems: 'flex-start',
     mb: ['30px', null, null, null, '40px'],
     p: {
       fontSize: [1, 2],
@@ -138,6 +150,7 @@ const styles = {
     fontSize: [1, 2],
     lineHeight: [1.75, 1.6],
     mb: 3,
+    mt: 5,
     alignItems: 'flex-start',
     color: 'text',
     '&.closed': {
@@ -148,8 +161,10 @@ const styles = {
     },
   },
   buttonGroup: {
+    display: 'flex',
     textAlign: 'center',
     mt: ['30px', null, null, null, '35px'],
+    justifyContent: 'center',
     '.free__trail': {
       color: 'secondary',
       width: '100%',

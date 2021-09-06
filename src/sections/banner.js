@@ -8,6 +8,7 @@ import ShapeLeft from 'assets/shp2.svg';
 import ShapeRight from 'assets/shp.svg';
 import Logo from 'components/logo';
 import LogoSetangan from 'assets/LogoSetangan.jpg'
+import { Link } from 'react-scroll';
 
 export default function Banner() {
   return (
@@ -22,7 +23,9 @@ export default function Banner() {
             A kit that contains you all the things you need to make a clay craft from home!
             Go check our latest!
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Link to='feature' smooth={true}>
+            <Button variant="primary">Explore</Button>
+          </Link>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
