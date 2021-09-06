@@ -33,7 +33,7 @@ const data = [
     altText: 'Make Yours More Colorful',
     title: 'Make Yours More Colorful',
     text:
-      "With More Colors We Provided You Can Create An Existential Craft. Just Rainbows Your Craft!",
+      "With More Colors We Provided You Can Create An Existential. Just Rainbows Your Craft!",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const data = [
     altText: 'Quality Check',
     title: 'Quality Check',
     text:
-      'All Our Products Has Been Passed Quality Check Before Landed Right To You Home. We Calculate More Percise Weight, Ensure No Broken Part, Cross Checking Order, etc.',
+      'All Our Products Has Been Passed Quality Check Before Landed Right To Your Home. We Calculate More Percise Weight, Ensure No Broken Part, Cross Checking Order, etc.',
   },
 ];
 

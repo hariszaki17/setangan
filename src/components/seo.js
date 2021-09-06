@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup product landing page',
-  author = 'JSM',
+  description = 'A kit that contains you all the things you need to make a clay craft from home! Go check our latest!',
+  author = 'Diaz',
   meta,
-  title = 'startup landing title',
+  title = 'The #1st Creative Clay Kit',
 }) {
   const metaData = [
     {
